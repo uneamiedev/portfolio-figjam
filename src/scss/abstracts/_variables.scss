@@ -2,19 +2,53 @@
 // Variables
 // -----------------------------------------------------------------------------
 
-/* Typography */
-/* Breakpoints */
-/* Paths */
-/* Grid setup */
 /* Colour palette */
-$black: #000;
-$white: #fff;
-$light-gray: #f1f1f1;
+$black: hsl(0, 0%, 0%);
+$white: hsl(0, 0%, 100%);
 
-$body-background-color: #333;
-$foreground-color: #fff;
-$caption-color: #464646;
-$accent-color: #999;
-$link-color: #ec1f4e;
+$c-primary: hsl(266, 100%, 64%);
+$c-primary-light: hsl(280, 100%, 87%);
 
-/* Components */
+$c-secondary: hsl(47, 100%, 50%);
+$c-secondary-light: hsl(47, 100%, 60%);
+
+$c-tertiary: hsl(14, 89%, 53%);
+$c-tertiary-light: hsl(21, 100%, 69%);
+
+$c-grey: (
+	'100': hsl(0, 0%, 82%),
+	'200': hsl(0, 0%, 80%),
+	'300': hsl(0, 0%, 50%),
+	'400': hsl(0, 0%, 20%),
+	'500': hsl(0, 0%, 13%),
+);
+
+/* User Interface */
+$ui-min-width: 320px;
+$ui-max-width: 1200px;
+
+$ui-menu-bg: $white;
+$ui-menu-text: map-get($c-grey, '500');
+
+$ui-menu-bg-dark: map-get($c-grey, '500');
+$ui-menu-text-dark: map-get($c-grey, '100');
+
+$ui-border: map-get($c-grey, '200');
+
+$ui-action-icon: map-get($c-grey, '500');
+$ui-tool-icon: map-get($c-grey, '400');
+
+$ui-shadow: hsla(0, 0%, 0%, 0.15) 0px 3px 8px;
+
+/* Typography */
+$f-family: 'Cairo', sans-serif;
+
+$text-primary: $black;
+$text-primary-light: map-get($c-grey, '300');
+
+$text-secondary: $white;
+
+/* Breakpoints */
+$breakpoint-small: 375px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 1440px;
