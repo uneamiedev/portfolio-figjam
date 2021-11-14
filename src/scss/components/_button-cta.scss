@@ -1,0 +1,19 @@
+.button-cta {
+	display: inline-block;
+	padding: 8px 11px;
+	border-radius: 4px;
+	background-color: $c-primary;
+	color: $white;
+	font-size: rem(12px);
+	font-weight: 500;
+
+	transition-property: color, background-color;
+	transition-duration: .3s;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: $c-primary-transparent;
+		color: $c-primary;
+	}
+}
