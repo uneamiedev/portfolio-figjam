@@ -1,6 +1,7 @@
 import '../scss/app.scss';
+import cursor from './components/cursor.js';
 
 /* Your JS Code goes here */
-
-/* Demo JS */
-import './demo.js';
+document.addEventListener("DOMContentLoaded", function () {
+	cursor.init();
+});

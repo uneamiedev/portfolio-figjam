@@ -1,0 +1,8 @@
+.cursor {
+	position: absolute;
+	padding: 0 6px;
+	box-shadow: $ui-shadow;
+	background-color: $c-secondary;
+	font-weight: 600;
+	pointer-events: none;
+}
