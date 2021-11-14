@@ -8,6 +8,7 @@ $white: hsl(0, 0%, 100%);
 
 $c-primary: hsl(266, 100%, 64%);
 $c-primary-light: hsl(280, 100%, 87%);
+$c-primary-transparent: hsla(266.1, 100%, 63.9%, 0.2);
 
 $c-secondary: hsl(47, 100%, 50%);
 $c-secondary-light: hsl(47, 100%, 60%);
@@ -51,4 +52,5 @@ $text-secondary: $white;
 /* Breakpoints */
 $breakpoint-small: 375px;
 $breakpoint-medium: 768px;
-$breakpoint-large: 1440px;
+$breakpoint-large: 1200px;
+$breakpoint-xl: 1440px;
