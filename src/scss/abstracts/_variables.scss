@@ -41,6 +41,9 @@ $ui-tool-icon: map-get($c-grey, '400');
 
 $ui-shadow: hsla(0, 0%, 0%, 0.15) 0px 3px 8px;
 
+$ui-bg-hover: hsl(0, 0%, 94%);
+$ui-bg-active: $c-primary;
+
 /* Typography */
 $f-family: 'Cairo', sans-serif;
 
