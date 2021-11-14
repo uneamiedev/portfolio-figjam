@@ -19,8 +19,14 @@
 	}
 }
 
-@mixin screen-xl {
+@mixin screen-l {
 	@media (min-width: $breakpoint-large) {
+		@content;
+	}
+}
+
+@mixin screen-xl {
+	@media (min-width: $breakpoint-xl) {
 		@content;
 	}
 }
