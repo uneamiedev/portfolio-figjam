@@ -1,0 +1,28 @@
+.window-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@include screen-sm {
+		padding: 0 20px;
+	}
+
+	.window {
+		max-width: rem(1200px);
+		min-height: rem(568px);
+		max-height: rem(830px);
+
+		@include screen-sm {
+			height: calc(100vh - 40px);
+			max-width: rem($breakpoint-medium);
+		}
+
+		@include screen-md {
+			max-width: rem($breakpoint-large);
+		}
+
+		@include screen-xl {
+			max-height: rem(830px);
+		}
+	}
+}
