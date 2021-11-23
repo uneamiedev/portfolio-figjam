@@ -4,7 +4,7 @@ export default {
 
 		if (cursor) {
 			document.addEventListener('mousemove', e => {
-				cursor.setAttribute("style", "top: " + (e.pageY + 16) + "px; left: " + (e.pageX + 10) + "px;")
+				cursor.setAttribute("style", "top: " + (e.pageY + 20) + "px; left: " + (e.pageX + 20) + "px;")
 			});
 		}
 	},
