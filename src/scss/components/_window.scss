@@ -10,7 +10,28 @@
 	}
 
 	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 		min-height: rem(40px);
+
+		&__left {
+			display: flex;
+			align-items: center;
+
+			.tag {
+				margin-left: rem(4px);
+			}
+		}
+
+		.breadcrumbs {
+			margin-left: rem(-39px);
+		}
+
+		.breadcrumbs > li > a,
+		.breadcrumbs > li::after {
+			display: none;
+		}
 	}
 
 	&__body {
