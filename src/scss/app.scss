@@ -10,8 +10,19 @@
 @import 'base/base';
 @import 'base/fonts';
 @import 'base/typography';
+@import 'base/helpers';
 
 // 4. Layout-related sections
+@import 'layout/window-wrapper';
 
 // 5. Components
+@import 'components/window';
+@import 'components/tag';
+@import 'components/breadcrumbs';
+@import 'components/button-cta';
+@import 'components/button-help';
+@import 'components/button-icon';
+@import 'components/zoom';
+@import 'components/cursor';
 
+@import 'pages/components';
