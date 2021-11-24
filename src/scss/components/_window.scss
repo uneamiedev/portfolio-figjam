@@ -24,6 +24,16 @@
 			}
 		}
 
+		&__right {
+			display: flex;
+			align-items: center;
+		}
+
+		.button-cta,
+		.button-contact {
+			display: none;
+		}
+
 		.breadcrumbs {
 			margin-left: rem(-39px);
 		}
@@ -31,6 +41,22 @@
 		.breadcrumbs > li > a,
 		.breadcrumbs > li::after {
 			display: none;
+		}
+
+		@include screen-md {
+			.breadcrumbs {
+				margin-left: 0px;
+				margin-right: rem(-47px);
+			}
+
+			.button-cta,
+			.button-contact {
+				display: initial;
+			}
+
+			.button-contact {
+				margin: 0 4px;
+			}
 		}
 	}
 
