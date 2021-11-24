@@ -13,7 +13,12 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		min-height: rem(40px);
+		min-height: rem(48px);
+
+		&__left,
+		&__right {
+			align-self: stretch;
+		}
 
 		&__left {
 			display: flex;
@@ -30,7 +35,8 @@
 		}
 
 		.button-cta,
-		.button-contact {
+		.button-contact,
+		.zoom {
 			display: none;
 		}
 
@@ -56,6 +62,27 @@
 
 			.button-contact {
 				margin: 0 4px;
+			}
+		}
+
+		@include screen-xl {
+			.breadcrumbs {
+				margin-left: rem(100px);
+				margin-right: 0px;
+			}
+
+			.breadcrumbs > li > a,
+			.breadcrumbs > li::after {
+				display: initial;
+			}
+
+			.button-icon {
+				margin: 0 4px 0 0;
+			}
+
+			.zoom {
+				display: flex;
+				margin-right: rem(6px);
 			}
 		}
 	}
