@@ -1,0 +1,9 @@
+.tag {
+	display: inline-block;
+	padding: 2px 6px;
+	border-radius: 4px;
+	background-color: $c-primary-transparent;
+	color: $c-primary;
+	font-size: rem(12px);
+	text-decoration: none; 
+}

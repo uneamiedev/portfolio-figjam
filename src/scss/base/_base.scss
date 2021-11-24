@@ -1,0 +1,12 @@
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100vh;
+	background-color: $c-primary;
+	color: $text-primary;
+	font-family: $f-family;
+	font-size: rem(16px);
+	line-height: 1.5;
+}

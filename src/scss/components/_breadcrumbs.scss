@@ -1,0 +1,25 @@
+.breadcrumbs {
+	display: flex;
+	font-size: rem(16px);
+
+	li:not(:last-child) {
+		color: $text-primary-light;
+		transition-property: color;
+		transition-duration: .3s;
+
+		&:hover,
+		&:focus {
+			color: $text-primary;
+		}
+
+		&::after {
+			content: '/';
+			padding: 0 6px;
+			color: $text-primary-light;
+		}
+	}
+
+	a {
+		color: inherit;
+	}
+}

@@ -1,0 +1,10 @@
+.button-help {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background-color: $ui-tool-icon;
+	cursor: pointer;
+}

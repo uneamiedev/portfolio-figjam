@@ -1,0 +1,40 @@
+.page-components {
+	background-color: $white;
+
+	h1,
+	h2 {
+		margin-bottom: 10px;
+		color: $c-primary;
+	}
+
+	h3 {
+		font-size: 18px;
+		margin-top: 10px;
+		margin-bottom: 8px;
+		color: map-get($c-grey, '300');
+		font-weight: 600;
+	}
+
+	hr {
+		color: $c-primary-transparent;
+	}
+
+	.components-container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 20px;
+	}
+
+	.components-breadcrumbs {
+		display: flex;
+
+		li:not(:last-child) {
+			color: $c-primary;
+
+			&::after {
+				content: '/';
+				padding: 0 6px;
+			}
+		}
+	}
+}

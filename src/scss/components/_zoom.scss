@@ -1,0 +1,35 @@
+.zoom {
+	display: flex;
+	// align-items: center;
+	overflow: hidden;
+	max-width: rem(112px);
+	border: 1px solid $ui-border;
+	border-radius: 6px;
+	font-size: rem(12px);
+
+	&__in,
+	&__out {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&:hover,
+		&:focus {
+			background-color: $ui-bg-hover;
+		}
+
+		&:active {
+			background-color: $ui-bg-active;
+		}
+	}
+
+	&__amount {
+		display: block;
+		min-width: rem(48px);
+		min-height: 100%;
+		padding: 0 10px;
+		border-left: 1px solid $ui-border;
+		border-right: 1px solid $ui-border;
+		line-height: 2.6;
+	}
+}

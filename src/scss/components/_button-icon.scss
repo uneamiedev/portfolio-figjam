@@ -1,0 +1,16 @@
+.button-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: rem(40px);
+	min-height: rem(40px);
+
+	&:hover,
+	&:focus {
+		background-color: $ui-bg-hover;
+	}
+
+	&:active {
+		background-color: $ui-bg-active;
+	}
+}

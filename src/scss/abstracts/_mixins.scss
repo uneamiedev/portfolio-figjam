@@ -1,10 +1,51 @@
 // -----------------------------------------------------------------------------
-// Mixins
+// 	Mixins
 // -----------------------------------------------------------------------------
+
+/**
+* Mediaqueries
+*
+* All styles should be written mobile-first, only a limited few should be max-width.
+*/
+@mixin screen-sm {
+	@media (min-width: $breakpoint-small) {
+		@content;
+	}
+}
+
+@mixin screen-md {
+	@media (min-width: $breakpoint-medium) {
+		@content;
+	}
+}
+
+@mixin screen-l {
+	@media (min-width: $breakpoint-large) {
+		@content;
+	}
+}
+
+@mixin screen-xl {
+	@media (min-width: $breakpoint-xl) {
+		@content;
+	}
+}
+
+/**
+* Miscellaneous Helpers
+*/
+
+// Center element using left and right margins
+@mixin mx-auto {
+	margin: {
+		left: auto;
+		right: auto;
+	}
+}
 
 // Declare standard porperties for ::before and ::after
 @mixin pseudo($display: block, $pos: absolute, $content: '') {
-  content: $content;
-  display: $display;
-  position: $pos;
+	content: $content;
+	display: $display;
+	position: $pos;
 }
